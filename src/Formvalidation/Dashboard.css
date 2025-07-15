@@ -1,0 +1,57 @@
+/* Dashboard styles only - no JSX or JS code! */
+
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f8fafc;
+}
+
+.dashboard-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2rem;
+  min-width: 320px;
+  max-width: 420px;
+}
+
+.info-grid {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #334155;
+  margin-right: 0.5rem;
+}
+
+.value {
+  color: #6366f1;
+}
+
+.bio-row {
+  margin-top: 1rem;
+}
+
+.bio {
+  margin: 0.3rem 0 0;
+  color: #64748b;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #7c3aed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+}

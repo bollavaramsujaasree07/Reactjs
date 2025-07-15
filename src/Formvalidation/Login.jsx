@@ -1,3 +1,5 @@
+import '../index.css';
+import './Login.css';
 import { useState } from "react";
 import React from "react";
 
@@ -31,7 +33,7 @@ function Login({onRegisterClick,onLoginSuccess}) {
         }  
 }          
   return (
-      <form onSubmit={handleSubmit}>
+      <form className="register-form" onSubmit={handleSubmit} style={{ margin: '40px auto' }}>
         <h2>Login</h2>
         <div>
             <label>Email:</label>

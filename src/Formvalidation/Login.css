@@ -1,0 +1,159 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgba(79, 70, 229, 0.07) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(236, 72, 153, 0.06) 0%,
+      rgba(255, 255, 255, 0) 55%
+    ),
+    #f8fafc; /* soft gray‑blue backdrop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 2. Form card */
+.register-form {
+  width: clamp(320px, 90vw, 420px);
+  background: #ffffff;
+  border-radius: 1.25rem; /* 20px */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2rem;
+  animation: floatIn 0.6s ease 0s both;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-form h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b; /* slate‑800 */
+  text-align: center;
+}
+
+/* 3. Input groups */
+.register-form div:not(:last-of-type) {
+  margin-bottom: 1.25rem;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #334155; /* slate‑700 */
+}
+
+/* 4. Inputs, selects, textarea */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form select,
+.register-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1; /* slate‑300 */
+  border-radius: 0.5rem;
+  background-color: #f8fafc; /* slate‑50 */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+  outline: none;
+  border-color: #6366f1; /* indigo‑500 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* 5. Radio buttons */
+.register-form input[type="radio"] {
+  margin-right: 0.35rem;
+  accent-color: #6366f1; /* native color in modern browsers */
+}
+
+.register-form input[type="radio"] + label {
+  margin-right: 1rem;
+}
+
+/* 6. Checkbox */
+.register-form input[type="checkbox"] {
+  accent-color: #6366f1;
+  margin-right: 0.45rem;
+  transform: translateY(1px);
+}
+
+/* 7. Error messages */
+.register-form p {
+  margin: 0.3rem 0 0;
+  font-size: 0.82rem;
+  color: #dc2626; /* red‑600 */
+}
+
+/* 8. Primary button */
+.register-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.65rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1 0%, #7c3aed 100%);
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  margin-top: 0.5rem;
+}
+
+.register-form button[type="submit"]:hover {
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+  transform: translateY(-2px);
+}
+
+.register-form button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* 9. Link‑style button for login switch */
+.register-form button[type="button"] {
+  background: transparent;
+  border: none;
+  color: #6366f1;
+  font-size: 0.93rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.25rem;
+  transition: color 0.2s;
+}
+
+.register-form button[type="button"]:hover {
+  color: #4f46e5; /* indigo‑600 */
+}
+
+/* 10. Bio textarea sizing */
+.register-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}

@@ -1,3 +1,4 @@
+import './Register.css';
 import { useState } from "react";
 
 function Register({onRegisterSuccess,onLoginClick}){
@@ -53,7 +54,7 @@ function Register({onRegisterSuccess,onLoginClick}){
     };
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form className='register-form' onSubmit={handleSubmit}>
             <h2>Register</h2>
 
             <div>
@@ -65,7 +66,7 @@ function Register({onRegisterSuccess,onLoginClick}){
             <div>
                 <label>Email:</label>
                 <input name="email" value={formData.email} onChange={handleChange}/>
-                {errors.mail && <p>{errors.mail}</p>}
+                {errors.email && <p>{errors.email}</p>}
             </div>
 
             <div>
