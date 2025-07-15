@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import Register from "./Register.jsx";
+import Register from "./Register.jsx";
 import Login from "./Login.jsx";
 //import Dashboard from "./Dashboard.jsx";
 
