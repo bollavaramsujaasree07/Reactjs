@@ -1,8 +1,7 @@
 import { useState } from "react";
-import RegisterPage from "./RegisterPage.jsx";
-import LoginPage from "./LoginPage.jsx";
-import Dashboard from "./Dashboard.jsx";
-import "./styles.css";
+//import Register from "./Register.jsx";
+import Login from "./Login.jsx";
+//import Dashboard from "./Dashboard.jsx";
 
 
 

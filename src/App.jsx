@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+//import './App.css'
 import { Jaya } from './jayalavakusha/jaya.jsx'
 import { Lava } from './jayalavakusha/lava.jsx'
 import { Kusha } from './jayalavakusha/kusha.jsx'
@@ -11,7 +11,7 @@ import  Counter from './usestate/Count.jsx'
 import MirrorInput from './usestate/Mirrorinput.jsx'
 import Shortcircuit from './shortcircuit/Shortcircuit.jsx'
 import Ternaryoperators from './Ternaryoperators/Ternaryoperaters.jsx'
-import App2 from './Ternaryoperators/App2.jsx'
+import App3 from './Formvalidation/App3.jsx'
 function App() {
   
 
@@ -28,7 +28,7 @@ function App() {
       {/*<MirrorInput />*/}
       {/*<Shortcircuit/>*/}
       {/*<Ternaryoperators/>*/}
-      <App2/> 
+      <App3/> 
       
     </>
   );
