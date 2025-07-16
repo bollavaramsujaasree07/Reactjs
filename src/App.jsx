@@ -13,6 +13,7 @@ import Shortcircuit from './shortcircuit/Shortcircuit.jsx'
 import Ternaryoperators from './Ternaryoperators/Ternaryoperaters.jsx'
 import App3 from './Formvalidation/App3.jsx'
 import Effect from './UseEffect/Effect.jsx'
+import Salaar from './UseEffect/Salar.jsx'
 function App() {
   
 
@@ -30,7 +31,8 @@ function App() {
       {/*<Shortcircuit/>*/}
       {/*<Ternaryoperators/>*/}
        {/*<App3/> */}
-       <Effect/>
+       {/*<Effect/>*/}
+       <Salaar/>
       
     </>
   );
