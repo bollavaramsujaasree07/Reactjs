@@ -16,8 +16,6 @@ html {
     ),
     #f8fafc; /* soft gray‑blue backdrop */
   display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -47,7 +45,6 @@ html {
   font-size: 1.6rem;
   font-weight: 600;
   color: #1e293b; /* slate‑800 */
-  text-align: center;
 }
 
 /* 3. Input groups */
@@ -63,7 +60,7 @@ html {
   color: #334155; /* slate‑700 */
 }
 
-/* 4. Inputs, selects, textarea */
+
 .register-form input[type="text"],
 .register-form input[type="email"],
 .register-form input[type="password"],
@@ -72,9 +69,9 @@ html {
   width: 100%;
   padding: 0.55rem 0.75rem;
   font-size: 0.95rem;
-  border: 1px solid #cbd5e1; /* slate‑300 */
+  border: 1px solid #cbd5e1; 
   border-radius: 0.5rem;
-  background-color: #f8fafc; /* slate‑50 */
+  background-color: #f8fafc; 
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -157,3 +154,4 @@ html {
   resize: vertical;
   min-height: 90px;
 }
+  

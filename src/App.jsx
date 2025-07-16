@@ -12,6 +12,7 @@ import MirrorInput from './usestate/Mirrorinput.jsx'
 import Shortcircuit from './shortcircuit/Shortcircuit.jsx'
 import Ternaryoperators from './Ternaryoperators/Ternaryoperaters.jsx'
 import App3 from './Formvalidation/App3.jsx'
+import Effect from './UseEffect/Effect.jsx'
 function App() {
   
 
@@ -28,7 +29,8 @@ function App() {
       {/*<MirrorInput />*/}
       {/*<Shortcircuit/>*/}
       {/*<Ternaryoperators/>*/}
-      <App3/> 
+       {/*<App3/> */}
+       <Effect/>
       
     </>
   );
